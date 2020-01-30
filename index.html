@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InvetorPedia</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div class="content">
+    <h1>InvestorPedia</h1>
+    <div id="searchbar-container">
+        <input id="searchbar" type="text"
+               name="search" placeholder="Search Investors..."/>
+    </div>
+    <div id='list'></div>
+
+    <div id="carousel-container">
+        <div class="carousel">
+        </div>
+    </div>
+    <div class="chart-container" >
+        <div class="scatterplot-and-map">
+            <svg class="scatterplot"></svg>
+            <div class="map">
+                <p class="map-title">Number of Invested Companies</p>
+                <div id="canvas-svg"></div>
+            </div>
+        </div>
+        <svg class="bar-chart"></svg>
+
+    </div>
+    <span class="caption"></span>
+    <div id="tooltip-container"></div>
+</div>
+<br>
+<br>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+<script type="text/javascript" src="d3.js"></script>
+<script>
+    d3version4 = d3
+    window.d3 = null
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script>
+    d3version3 = d3
+    window.d3 = null
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="map.js"></script>
+<script type="text/javascript" src="overAll.js"></script>
+
+<style>
+    body {
+        background-color: #F1F3F3
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #D4D8DA;
+        stroke-width: 1px;
+        shape-rendering: crispEdges;
+    }
+    .toolTip {
+        position: absolute;
+        display: none;
+        min-width: 60px;
+        height: auto;
+        background: none repeat scroll 0 0 #ffffff;
+        border: 1px solid #6F257F;
+        padding: 14px;
+        text-align: center;
+    }
+</style>
+
+</body>
+
+
+</html>

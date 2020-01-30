@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700&display=swap');
+
+html, header, body, div, svg {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Mono', monospace;
+    font-size: small;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.scatterplot-and-map {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.bar-chart{
+    margin-left: 160px;
+}
+
+.scatterplot {
+    margin-left: 100px;
+}
+
+circle {
+    fill: steelblue;
+    opacity: 0.5
+
+}
+
+
+text {
+
+    font-family: sans-serif;
+
+
+
+}
+
+.tick text {
+    font-size: 1em;
+    fill: #635F5D
+}
+
+.tick line{
+    stroke: #C0C0BB
+}
+
+.axis-label {
+    font-size: 1.5em;
+    fill: #8E8883
+
+}
+
+.series-label {
+    font-size: 1em;
+    font-color: #8E8883
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-right: 160px;
+}
+
+.title{
+    font-size: 2em;
+    fill: #635F5D;
+}
+
+.map-title {
+    font-size: 2em;
+    font-family: sans-serif;
+    color: #635F5D;
+    margin: 0px;
+    margin-top: 22px;
+}
+
+#carousel-container {
+    margin: 0 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    height: 70px !important;
+    color: #333;
+    background: #419be0;
+}
+
+.carousel {
+    background: #419be0;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.slick-slide {
+    background: #419be0;
+}
+
+.slick-slide .investor {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    /*margin: 10px;*/
+}
+
+.slick-current .investor {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    /*margin: 10px;*/
+}
+
+#searchbar-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#searchbar {
+    width: 300px;
+    height: 20px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    border: 1px solid lightblue;
+}
+
+#list {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+
+.search-option {
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.search-option:hover {
+    background-color: lightskyblue;
+}
+
+.states {
+    fill: none;
+    stroke: #8c8e91;
+    stroke-linejoin: round;
+}
+
+.states-choropleth {
+    fill: #d9d9d9;
+}
+
+#tooltip-container {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: 1px solid;
+
+    display: none;
+}
+
+.tooltip_key {
+    font-weight: bold;
+}
+
+.tooltip_value {
+    margin-left: 20px;
+
+    float: right;
+}
+
+#canvas-svg {}
+
+
+#canvas-svg-overall{
+    transform: translate(-100px,40px);
+    float:right;
+}
